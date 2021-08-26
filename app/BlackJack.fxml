@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="336.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.GameController">
+   <children>
+      <AnchorPane fx:id="penger" layoutX="7.0" layoutY="-5.0" prefHeight="358.0" prefWidth="421.0">
+         <children>
+            <Button fx:id="hit" layoutX="342.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleHit" prefHeight="41.0" prefWidth="65.0" text="Hit" />
+            <Button fx:id="stand" layoutX="342.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleStand" prefHeight="41.0" prefWidth="65.0" text="Stand" />
+            <Label fx:id="dealerKort" layoutX="24.0" layoutY="235.0" prefHeight="17.0" prefWidth="100.0" />
+            <Label fx:id="playerKort" layoutX="20.0" layoutY="310.0" prefHeight="17.0" prefWidth="65.0" />
+            <Label fx:id="dealerCount" layoutX="170.0" layoutY="240.0" />
+            <Label fx:id="playerCount" layoutX="171.0" layoutY="310.0" />
+            <Button fx:id="deal" layoutX="342.0" layoutY="139.0" mnemonicParsing="false" onAction="#handleDeal" prefHeight="41.0" prefWidth="65.0" text="Deal" />
+            <Label layoutX="342.0" layoutY="310.0" />
+            <Label fx:id="whoWins" layoutX="74.0" layoutY="121.0" />
+            <Label fx:id="penger" layoutX="342.0" layoutY="310.0" />
+            <Text layoutX="23.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer Kort" />
+            <Text layoutX="170.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer Count" />
+            <Text layoutX="24.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Kort" />
+            <Text layoutX="170.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Count" />
+            <Text layoutX="96.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vinner" />
+            <TextField fx:id="betSize" layoutX="242.0" layoutY="59.0" prefHeight="25.0" prefWidth="100.0" promptText="Bet" />
+            <Text layoutX="269.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bet" />
+            <Label fx:id="pengerPåKonto" layoutX="361.0" layoutY="319.0" />
+            <Text layoutX="304.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Penger" />
+            <Button fx:id="saveToFile" layoutX="20.0" layoutY="15.0" mnemonicParsing="false" onAction="#saveCurrentFiles" text="Save" />
+            <Button fx:id="loadFromFile" layoutX="98.0" layoutY="15.0" mnemonicParsing="false" onAction="#loadCurrentFiles" text="Load" />
+            <Label fx:id="lagreInfo" layoutX="23.0" layoutY="51.0" prefHeight="17.0" prefWidth="113.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
